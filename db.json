@@ -1,4 +1,67 @@
 
 {
-  "Dashboards" : [{"id":3,"name":"users","filePath":"users.ps1","baseUrl":"/users","dashboardFramework":{"id":3,"name":"AntDesign","path":"D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd","version":"1.0.0"},"powerShellVersion":null,"processId":-1,"processName":null,"status":0,"authenticated":false,"content":null,"grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{"id":11,"name":"demo","filePath":"demo.ps1","baseUrl":"/demo","dashboardFramework":{"id":5,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0","version":"3.0.0"},"powerShellVersion":null,"processId":23284,"processName":"pwsh.exe","status":1,"authenticated":false,"content":"New-UDDashboard -Title 'Hello, !' -Content {\r\n    New-UDTypography -Text 'dfgdfgdfg'\r\n    New-UDConfetti -Run $true -Duration 5 -PiecesNumber 20\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{"id":13,"name":"tests","filePath":"tests.ps1","baseUrl":"/tests","dashboardFramework":{"id":1,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\2.9.1-beta6","version":"2.9.1-beta6"},"powerShellVersion":null,"processId":-1,"processName":null,"status":0,"authenticated":false,"content":"New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{"id":14,"name":"tests99","filePath":"tests99.ps1","baseUrl":"/tests99","dashboardFramework":{"id":5,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0","version":"3.0.0"},"powerShellVersion":null,"processId":23812,"processName":"pwsh.exe","status":1,"authenticated":false,"content":"New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{"id":15,"name":"demo99","filePath":"demo99.ps1","baseUrl":"/demo","dashboardFramework":{"id":5,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0","version":"3.0.0"},"powerShellVersion":null,"processId":17000,"processName":"pwsh.exe","status":1,"authenticated":true,"content":"New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null}]
+  "Dashboards" : [{"id":3,"name":"users","filePath":"users.ps1","baseUrl":"/users","dashboardFramework":{"id":3,"name":"AntDesign","path":"D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd","version":"1.0.0"},"powerShellVersion":null,"processId":-1,"processName":null,"status":0,"authenticated":false,"content":null,"grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{
+"id": 3,
+"name": "users",
+"filePath": "users.ps1",
+"baseUrl": "/users",
+"dashboardFramework": {
+"id": 3,
+"name": "AntDesign",
+"path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
+"version": "1.0.0"
+},
+"powerShellVersion": null,
+"processId": -1,
+"processName": null,
+"status": 0,
+"authenticated": false,
+"content": null,
+"grantAppToken": false,
+"debug": false,
+"disableAutoStart": false,
+"dashboardComponents": null
+},{
+"id": 3,
+"name": "users",
+"filePath": "users.ps1",
+"baseUrl": "/users",
+"dashboardFramework": {
+"id": 3,
+"name": "AntDesign",
+"path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
+"version": "1.0.0"
+},
+"powerShellVersion": null,
+"processId": -1,
+"processName": null,
+"status": 0,
+"authenticated": false,
+"content": null,
+"grantAppToken": false,
+"debug": false,
+"disableAutoStart": false,
+"dashboardComponents": null
+},{
+"id": 3,
+"name": "users",
+"filePath": "users.ps1",
+"baseUrl": "/users",
+"dashboardFramework": {
+"id": 3,
+"name": "AntDesign",
+"path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
+"version": "1.0.0"
+},
+"powerShellVersion": null,
+"processId": -1,
+"processName": null,
+"status": 0,
+"authenticated": false,
+"content": null,
+"grantAppToken": false,
+"debug": false,
+"disableAutoStart": false,
+"dashboardComponents": null
+},{"id":11,"name":"demo","filePath":"demo.ps1","baseUrl":"/demo","dashboardFramework":{"id":5,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0","version":"3.0.0"},"powerShellVersion":null,"processId":23284,"processName":"pwsh.exe","status":1,"authenticated":false,"content":"New-UDDashboard -Title 'Hello, !' -Content {\r\n    New-UDTypography -Text 'dfgdfgdfg'\r\n    New-UDConfetti -Run $true -Duration 5 -PiecesNumber 20\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{"id":13,"name":"tests","filePath":"tests.ps1","baseUrl":"/tests","dashboardFramework":{"id":1,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\2.9.1-beta6","version":"2.9.1-beta6"},"powerShellVersion":null,"processId":-1,"processName":null,"status":0,"authenticated":false,"content":"New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{"id":14,"name":"tests99","filePath":"tests99.ps1","baseUrl":"/tests99","dashboardFramework":{"id":5,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0","version":"3.0.0"},"powerShellVersion":null,"processId":23812,"processName":"pwsh.exe","status":1,"authenticated":false,"content":"New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null},{"id":15,"name":"demo99","filePath":"demo99.ps1","baseUrl":"/demo","dashboardFramework":{"id":5,"name":"UniversalDashboard","path":"C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0","version":"3.0.0"},"powerShellVersion":null,"processId":17000,"processName":"pwsh.exe","status":1,"authenticated":true,"content":"New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}","grantAppToken":false,"debug":false,"disableAutoStart":false,"dashboardComponents":null}]
 }
