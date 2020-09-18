@@ -5,6 +5,7 @@
       "name": "users",
       "filePath": "users.ps1",
       "baseUrl": "/users",
+      "description": "Basic user information dashboard",
       "dashboardFramework": {
         "id": 3,
         "name": "AntDesign",
@@ -24,9 +25,10 @@
     },
     {
       "id": 3,
-      "name": "users",
-      "filePath": "users.ps1",
-      "baseUrl": "/users",
+      "name": "AdvancedUser",
+      "filePath": "advusers.ps1",
+      "baseUrl": "/advusers",
+      "description": "Advanced user information dashboard",
       "dashboardFramework": {
         "id": 3,
         "name": "AntDesign",
@@ -49,6 +51,7 @@
       "name": "PasswordResetPortal",
       "filePath": "passwordresetportal.ps1",
       "baseUrl": "/PasswordResetPortal",
+      "description": "Self password reset portal for users to change there password",
       "dashboardFramework": {
         "id": 3,
         "name": "AntDesign",
