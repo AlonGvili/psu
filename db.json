@@ -124,7 +124,7 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\2.9.1-beta6",
         "version": "2.9.1-beta6"
       },
-      "powerShellVersion": null,
+      "powerShellVersion": "6.3",
       "processId": -1,
       "processName": null,
       "status": 4,
@@ -146,7 +146,7 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
-      "powerShellVersion": null,
+      "powerShellVersion": "5.1",
       "processId": 23812,
       "processName": "pwsh.exe",
       "status": 3,
@@ -168,7 +168,7 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
-      "powerShellVersion": null,
+      "powerShellVersion": "7.0.2",
       "processId": 17000,
       "processName": "pwsh.exe",
       "status": 1,
