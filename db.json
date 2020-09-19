@@ -35,7 +35,7 @@
         "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
         "version": "1.0.0"
       },
-      "powerShellVersion": null,
+      "powerShellVersion": "7.0.1",
       "processId": -1,
       "processName": null,
       "status": 0,
@@ -102,7 +102,7 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
-      "powerShellVersion": null,
+      "powerShellVersion": "7.0.3",
       "processId": 23284,
       "processName": "pwsh.exe",
       "status": 1,
