@@ -61,7 +61,7 @@
       "powerShellVersion": "5.1",
       "processId": -1,
       "processName": null,
-      "status": 0,
+      "status": 1,
       "authenticated": false,
       "content": null,
       "grantAppToken": false,
