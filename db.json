@@ -24,7 +24,7 @@
       "dashboardComponents": null
     },
     {
-      "id": 3,
+      "id": 19,
       "name": "AdvancedUser",
       "filePath": "advusers.ps1",
       "baseUrl": "/advusers",
@@ -70,7 +70,7 @@
       "dashboardComponents": null
     },
     {
-      "id": 3,
+      "id": 33,
       "name": "Users",
       "filePath": "users.ps1",
       "baseUrl": "/users",
