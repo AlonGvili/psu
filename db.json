@@ -297,5 +297,43 @@
       "disableAutoStart": false,
       "dashboardComponents": null
     }
+  ],
+  "Endpoints": [
+    {
+      "id": 5,
+      "url": "/qa",
+      "method": "GET",
+      "scriptBlock": "# Your powershell code.",
+      "authentication": false,
+      "role": null,
+      "regEx": false
+    },
+    {
+      "id": 7,
+      "url": "/users",
+      "method": "POST",
+      "scriptBlock": "# Your powershell code.",
+      "authentication": false,
+      "role": null,
+      "regEx": false
+    },
+    {
+      "id": 8,
+      "url": "/users/:id",
+      "method": "DELETE",
+      "scriptBlock": "# Your powershell code.",
+      "authentication": false,
+      "role": null,
+      "regEx": false
+    },
+    {
+      "id": 9,
+      "url": "/users/:id/profile",
+      "method": "PUT",
+      "scriptBlock": "# Your powershell code.",
+      "authentication": false,
+      "role": null,
+      "regEx": false
+    }
   ]
 }
