@@ -1,6 +1,102 @@
 {
   "Dashboards": [
     {
+      "id": 2,
+      "name": "demo",
+      "filePath": "demo.ps1",
+      "baseUrl": "/dashboard",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "powerShellVersion": null,
+      "environment": null,
+      "processId": 12188,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": null,
+      "content": "Demo content",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 3,
+      "name": "qa",
+      "filePath": "qa.ps1",
+      "baseUrl": "/qa",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "powerShellVersion": null,
+      "environment": null,
+      "processId": 20132,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": null,
+      "content": "Demo content",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": true,
+      "dashboardComponents": null
+    },
+    {
+      "id": 5,
+      "name": "Test",
+      "filePath": "Test.ps1",
+      "baseUrl": "/test",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "powerShellVersion": null,
+      "environment": null,
+      "processId": 3396,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": null,
+      "content": "Demo content",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 6,
+      "name": "fgfgfg",
+      "filePath": "fgfgfg.ps1",
+      "baseUrl": "/gfgfgfgfg",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "powerShellVersion": null,
+      "environment": null,
+      "processId": 1400,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": null,
+      "content": "Demo content",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
       "id": 3,
       "name": "users",
       "filePath": "users.ps1",
