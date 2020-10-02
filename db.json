@@ -11,13 +11,12 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
         "version": "3.1.0"
       },
-      "powerShellVersion": null,
-      "environment": null,
+      "environment": "7.0.3",
       "processId": 12188,
       "processName": "pwsh.exe",
       "status": 1,
       "authenticated": false,
-      "role": null,
+      "role": "Administrator",
       "content": "Demo content",
       "grantAppToken": false,
       "debug": false,
@@ -35,8 +34,7 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
         "version": "3.1.0"
       },
-      "powerShellVersion": null,
-      "environment": null,
+      "environment": "7.0.3",
       "processId": 20132,
       "processName": "pwsh.exe",
       "status": 1,
@@ -59,8 +57,7 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
         "version": "3.1.0"
       },
-      "powerShellVersion": null,
-      "environment": null,
+      "environment": "7.0.3",
       "processId": 3396,
       "processName": "pwsh.exe",
       "status": 1,
@@ -83,8 +80,7 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
         "version": "3.1.0"
       },
-      "powerShellVersion": null,
-      "environment": null,
+      "environment": "7.0.3",
       "processId": 1400,
       "processName": "pwsh.exe",
       "status": 1,
@@ -108,9 +104,9 @@
         "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
         "version": "1.0.0"
       },
-      "powerShellVersion": "5.1",
-      "processId": -1,
+      "environment": "5.1",
       "processName": null,
+      "role": "Administrator",
       "status": 0,
       "authenticated": false,
       "content": null,
@@ -131,10 +127,10 @@
         "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
         "version": "1.0.0"
       },
-      "powerShellVersion": "7.0.1",
-      "processId": -1,
+      "environment": "7.0.1",
       "processName": null,
       "status": 0,
+      "role": "Reader",
       "authenticated": false,
       "content": null,
       "grantAppToken": false,
@@ -154,12 +150,12 @@
         "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
         "version": "1.0.0"
       },
-      "powerShellVersion": "5.1",
-      "processId": -1,
+      "environment": "5.1",
       "processName": null,
       "status": 1,
       "authenticated": false,
       "content": null,
+      "role": "Administrator",
       "grantAppToken": false,
       "debug": false,
       "disableAutoStart": false,
@@ -176,12 +172,12 @@
         "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
         "version": "1.0.0"
       },
-      "powerShellVersion": "7.0.3",
-      "processId": -1,
+      "environment": "7.0.3",
       "processName": null,
       "status": 0,
       "authenticated": false,
       "content": null,
+      "role": "QA",
       "grantAppToken": false,
       "debug": false,
       "disableAutoStart": false,
@@ -198,10 +194,10 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
-      "powerShellVersion": "7.0.3",
-      "processId": 23284,
+      "environment": "7.0.3",
       "processName": "pwsh.exe",
       "status": 1,
+      "role": "Administrator",
       "authenticated": false,
       "content": "New-UDDashboard -Title 'Hello, !' -Content {\r\n    New-UDTypography -Text 'dfgdfgdfg'\r\n    New-UDConfetti -Run $true -Duration 5 -PiecesNumber 20\r\n}",
       "grantAppToken": false,
@@ -220,10 +216,10 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\2.9.1-beta6",
         "version": "2.9.1-beta6"
       },
-      "powerShellVersion": "6.3",
-      "processId": -1,
+      "environment": "6.3",
       "processName": null,
       "status": 4,
+      "role": null,
       "authenticated": false,
       "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
       "grantAppToken": false,
@@ -242,14 +238,14 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
-      "powerShellVersion": "5.1",
-      "processId": 23812,
+      "environment": "5.1",
       "processName": "pwsh.exe",
       "status": 3,
       "authenticated": false,
       "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
       "grantAppToken": false,
       "debug": false,
+      "role": "Administrator",
       "disableAutoStart": false,
       "dashboardComponents": null
     },
@@ -264,9 +260,9 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
-      "powerShellVersion": "7.0.2",
-      "processId": 17000,
+      "environment": "7.0.2",
       "processName": "pwsh.exe",
+      "role": "Administrator",
       "status": 1,
       "authenticated": true,
       "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
@@ -286,19 +282,19 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
-      "powerShellVersion": "7.0.1",
-      "processId": 17000,
+      "environment": "7.0.1",
       "processName": "pwsh.exe",
       "status": 1,
       "authenticated": true,
       "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
       "grantAppToken": false,
       "debug": false,
+      "role": "Administrator",
       "disableAutoStart": false,
       "dashboardComponents": null
     }
   ],
-  "Endpoints": [
+  "Endpoint": [
     {
       "id": 5,
       "url": "/qa",
@@ -885,5 +881,22 @@
         "totalDownloads": 25130
       }
     ]
-  }
+  },
+  "Roles": [
+    {
+      "name": "Administrator",
+      "id": 0,
+      "description": null
+    },
+    {
+      "name": "Reader",
+      "id": 3,
+      "description": null
+    }
+    {
+      "name": "QA",
+      "id": 4,
+      "description": null
+    }
+  ]
 }
