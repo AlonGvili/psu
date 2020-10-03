@@ -264,6 +264,18 @@
       "processName": "pwsh.exe",
       "role": "Administrator",
       "status": 1,
+      "tags": [
+        {
+          "id": 1,
+          "color": "#108ee9",
+          "label": "production"
+        },
+        {
+          "id": 4,
+          "color": "#108ee9",
+          "label": "testing"
+        }
+      ],
       "authenticated": true,
       "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
       "grantAppToken": false,
@@ -272,7 +284,7 @@
       "dashboardComponents": null
     },
     {
-      "id": 15,
+      "id": 45,
       "name": "Help Desk",
       "filePath": "helpdesk.ps1",
       "baseUrl": "/hd",
@@ -282,6 +294,18 @@
         "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
         "version": "3.0.0"
       },
+      "tags": [
+        {
+          "id": 1,
+          "color": "#108ee9",
+          "label": "production"
+        },
+        {
+          "id": 2,
+          "color": "#108ee9",
+          "label": "helpdesk"
+        }
+      ],
       "environment": "7.0.1",
       "processName": "pwsh.exe",
       "status": 1,
