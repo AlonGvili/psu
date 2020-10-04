@@ -927,5 +927,25 @@
       "id": 4,
       "description": null
     }
-  ]
+  ],
+  "Frameworks": [
+    {
+      "id": 1,
+      "name": "UniversalDashboard",
+      "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\2.9.4",
+      "version": "2.9.4"
+    },
+    {
+      "id": 2,
+      "name": "UniversalDashboard",
+      "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+      "version": "3.1.0"
+    }
+  ],
+  "NewestFramework": {
+    "id": 2,
+    "name": "UniversalDashboard",
+    "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+    "version": "3.1.0"
+  }
 }
