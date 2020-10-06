@@ -25,7 +25,7 @@
     },
     {
       "id": 39,
-      "name": "qa",
+      "name": "qaNew",
       "filePath": "qa.ps1",
       "baseUrl": "/qa",
       "dashboardFramework": {
