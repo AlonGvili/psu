@@ -40,7 +40,7 @@
       "status": 1,
       "authenticated": false,
       "role": null,
-      "content": "Demo content",
+      "content": "New-ComponentPage -Title 'Nivo Bar' -Description 'Creates a bar chart based on the Nivo library' -Content {\r\n    New-Example -Title 'Bar' -Description '' -Example {\r\n        $Data = 1..10 | ForEach-Object { \r\n            $item = Get-Random -Max 1000 \r\n            [PSCustomObject]@{\r\n                Name = \"Test$item\"\r\n                Value = $item\r\n            }\r\n        }\r\n        New-UDNivoChart -Bar -Keys \"Value\" -IndexBy 'name' -Data $Data -Height 500 -Width 1000\r\n    }\r\n} -Cmdlet @(\"New-UDNivoChart\")\r\n",
       "grantAppToken": false,
       "debug": false,
       "disableAutoStart": true,
