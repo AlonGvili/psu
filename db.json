@@ -2,7 +2,7 @@
   "Dashboards": [
     {
       "id": 92,
-      "name": "demo",
+      "name": "alongvili",
       "filePath": "demo.ps1",
       "baseUrl": "/dashboard",
       "dashboardFramework": {
