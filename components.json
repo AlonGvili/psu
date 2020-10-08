@@ -1,0 +1,22 @@
+{
+  "Components": [
+    {
+      "id": 1,
+      "name": "UniversalDashboard.Charts",
+      "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Components\\UniversalDashboard.Charts\\1.2.0",
+      "version": "1.2.0"
+    },
+    {
+      "id": 2,
+      "name": "UniversalDashboard.CodeEditor",
+      "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Components\\UniversalDashboard.CodeEditor\\1.0.3",
+      "version": "1.0.3"
+    },
+    {
+      "id": 3,
+      "name": "UniversalDashboard.Map",
+      "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Components\\UniversalDashboard.Map\\1.0",
+      "version": "1.0"
+    }
+  ]
+}

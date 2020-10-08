@@ -1,0 +1,24 @@
+{
+  "Roles": [
+    {
+      "name": "Alon",
+      "id": 0,
+      "description": null
+    },
+    {
+      "name": "Administrator",
+      "id": 1,
+      "description": null
+    },
+    {
+      "name": "Reader",
+      "id": 3,
+      "description": null
+    },
+    {
+      "name": "QA",
+      "id": 4,
+      "description": null
+    }
+  ]
+}

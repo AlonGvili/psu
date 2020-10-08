@@ -1,0 +1,324 @@
+{
+  "Dashboards": [
+    {
+      "id": 92,
+      "name": "alongvili",
+      "filePath": "demo.ps1",
+      "baseUrl": "/dashboard",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "environment": "7.0.3",
+      "processId": 12188,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": "Administrator",
+      "content": "$OutputPath = \"$PSScriptRoot\\..\\..\\..\\output\"\r\n$Address = 'http://localhost:5000'\r\n\r\nRemove-Item \"$Env:ProgramData\\UniversalAutomation\" -Force -Recurse -ErrorAction SilentlyContinue\r\nRemove-Item \"$Env:ProgramData\\PowerShellUniversal\" -Force -Recurse -ErrorAction SilentlyContinue\r\n\r\nPush-Location \"$PSScriptRoot\\..\\..\\..\\\"\r\nStart-Process \"$OutputPath\\Universal.Server.exe\"\r\nPop-Location\r\n\r\nImport-Module \"Universal\"\r\n\r\nwhile($true) {\r\n    try {\r\n        Invoke-WebRequest \"$Address/api/v1/alive\" | Out-null\r\n        break\r\n    }\r\n    catch {}\r\n}\r\n\r\ntry \r\n{\r\n\r\n    Invoke-WebRequest \"$Address/api/v1/signin\" -Method Post -Body (@{ username = 'admin'; password = '1234' } | ConvertTo-Json) -SessionVariable 'PUWS' -ContentType 'application/json' | out-null\r\n    $AppToken = (Invoke-WebRequest \"$Address/api/v1/apptoken/grant\" -WebSession $PUWS).Content | ConvertFrom-Json\r\n\r\n    Connect-UAServer -ComputerName $Address -AppToken $AppToken.Token\r\n    $Framework = Get-UDDashboardFramework | Where-Object { $_.Version.StartsWith(\"3\")} \r\n    Add-UDDashboard -Name 'Test' -FilePath \"$PSScriptRoot\\dashboard.ps1\" -Framework $Framework -BaseUrl '/test' \r\n}\r\ncatch \r\n{\r\n    Get-Process \"Universal.Server\" | Stop-Process\r\n    throw $_\r\n}\r\n",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 39,
+      "name": "qaNew",
+      "filePath": "qa.ps1",
+      "baseUrl": "/qa",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "environment": "7.0.3",
+      "processId": 20132,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": null,
+      "content": "New-ComponentPage -Title 'Nivo Bar' -Description 'Creates a bar chart based on the Nivo library' -Content {\r\n    New-Example -Title 'Bar' -Description '' -Example {\r\n        $Data = 1..10 | ForEach-Object { \r\n            $item = Get-Random -Max 1000 \r\n            [PSCustomObject]@{\r\n                Name = \"Test$item\"\r\n                Value = $item\r\n            }\r\n        }\r\n        New-UDNivoChart -Bar -Keys \"Value\" -IndexBy 'name' -Data $Data -Height 500 -Width 1000\r\n    }\r\n} -Cmdlet @(\"New-UDNivoChart\")\r\n",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": true,
+      "dashboardComponents": null
+    },
+    {
+      "id": 5,
+      "name": "Test",
+      "filePath": "Test.ps1",
+      "baseUrl": "/test",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "environment": "7.0.3",
+      "processId": 3396,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": null,
+      "content": "Demo content",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 6,
+      "name": "fgfgfg",
+      "filePath": "fgfgfg.ps1",
+      "baseUrl": "/gfgfgfgfg",
+      "dashboardFramework": {
+        "id": 2,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.1.0",
+        "version": "3.1.0"
+      },
+      "environment": "7.0.3",
+      "processId": 1400,
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": false,
+      "role": null,
+      "content": "Demo content",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 3,
+      "name": "users",
+      "filePath": "users.ps1",
+      "baseUrl": "/users",
+      "description": "Basic user information dashboard",
+      "dashboardFramework": {
+        "id": 3,
+        "name": "AntDesign",
+        "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
+        "version": "1.0.0"
+      },
+      "environment": "5.1",
+      "processName": null,
+      "role": "Administrator",
+      "status": 0,
+      "authenticated": false,
+      "content": null,
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 19,
+      "name": "AdvancedUser",
+      "filePath": "advusers.ps1",
+      "baseUrl": "/advusers",
+      "description": "Advanced user information dashboard",
+      "dashboardFramework": {
+        "id": 3,
+        "name": "AntDesign",
+        "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
+        "version": "1.0.0"
+      },
+      "environment": "7.0.1",
+      "processName": null,
+      "status": 0,
+      "role": "Reader",
+      "authenticated": false,
+      "content": null,
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 2,
+      "name": "PasswordResetPortal",
+      "filePath": "passwordresetportal.ps1",
+      "baseUrl": "/PasswordResetPortal",
+      "description": "Self password reset portal for users to change there password",
+      "dashboardFramework": {
+        "id": 3,
+        "name": "AntDesign",
+        "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
+        "version": "1.0.0"
+      },
+      "environment": "5.1",
+      "processName": null,
+      "status": 1,
+      "authenticated": false,
+      "content": null,
+      "role": "Administrator",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 33,
+      "name": "Users",
+      "filePath": "users.ps1",
+      "baseUrl": "/users",
+      "dashboardFramework": {
+        "id": 3,
+        "name": "AntDesign",
+        "path": "D:\\GPM\\github.com\\AlonGvili\\UniversalDashboard.Antd\\src\\output\\UniversalDashboard.Antd",
+        "version": "1.0.0"
+      },
+      "environment": "7.0.3",
+      "processName": null,
+      "status": 0,
+      "authenticated": false,
+      "content": null,
+      "role": "QA",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 11,
+      "name": "HRP01",
+      "filePath": "hrp01.ps1",
+      "baseUrl": "/hrp01",
+      "dashboardFramework": {
+        "id": 5,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
+        "version": "3.0.0"
+      },
+      "environment": "7.0.3",
+      "processName": "pwsh.exe",
+      "status": 1,
+      "role": "Administrator",
+      "authenticated": false,
+      "content": "New-UDDashboard -Title 'Hello, !' -Content {\r\n    New-UDTypography -Text 'dfgdfgdfg'\r\n    New-UDConfetti -Run $true -Duration 5 -PiecesNumber 20\r\n}",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 13,
+      "name": "tests",
+      "filePath": "tests.ps1",
+      "baseUrl": "/tests",
+      "dashboardFramework": {
+        "id": 1,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\2.9.1-beta6",
+        "version": "2.9.1-beta6"
+      },
+      "environment": "6.3",
+      "processName": null,
+      "status": 4,
+      "role": null,
+      "authenticated": false,
+      "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 14,
+      "name": "tests99",
+      "filePath": "tests99.ps1",
+      "baseUrl": "/tests99",
+      "dashboardFramework": {
+        "id": 5,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
+        "version": "3.0.0"
+      },
+      "environment": "5.1",
+      "processName": "pwsh.exe",
+      "status": 3,
+      "authenticated": false,
+      "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
+      "grantAppToken": false,
+      "debug": false,
+      "role": "Administrator",
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 15,
+      "name": "QaP01",
+      "filePath": "qa-p-01.ps1",
+      "baseUrl": "/qap01",
+      "dashboardFramework": {
+        "id": 5,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
+        "version": "3.0.0"
+      },
+      "environment": "7.0.2",
+      "processName": "pwsh.exe",
+      "role": "Administrator",
+      "status": 1,
+      "tags": [
+        {
+          "id": 1,
+          "color": "#108ee9",
+          "label": "production"
+        },
+        {
+          "id": 4,
+          "color": "#108ee9",
+          "label": "testing"
+        }
+      ],
+      "authenticated": true,
+      "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
+      "grantAppToken": false,
+      "debug": false,
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    },
+    {
+      "id": 45,
+      "name": "Help Desk",
+      "filePath": "helpdesk.ps1",
+      "baseUrl": "/hd",
+      "dashboardFramework": {
+        "id": 5,
+        "name": "UniversalDashboard",
+        "path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Frameworks\\UniversalDashboard\\3.0.0",
+        "version": "3.0.0"
+      },
+      "tags": [
+        {
+          "id": 1,
+          "color": "#108ee9",
+          "label": "production"
+        },
+        {
+          "id": 2,
+          "color": "#108ee9",
+          "label": "helpdesk"
+        }
+      ],
+      "environment": "7.0.1",
+      "processName": "pwsh.exe",
+      "status": 1,
+      "authenticated": true,
+      "content": "New-UDDashboard -Title \"Hello, World!\" -Content {\r\n    New-UDTypography -Text \"Hello, World!\"\r\n\r\n    New-UDButton -Text \"Learn more about Universal Dashboard\" -OnClick {\r\n        Invoke-UDRedirect https://docs.ironmansoftware.com\r\n    }\r\n}",
+      "grantAppToken": false,
+      "debug": false,
+      "role": "Administrator",
+      "disableAutoStart": false,
+      "dashboardComponents": null
+    }
+  ]
+}
+
+
+
