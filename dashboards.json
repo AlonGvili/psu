@@ -21,7 +21,14 @@
       "grantAppToken": false,
       "debug": false,
       "disableAutoStart": false,
-      "dashboardComponents": null
+      "dashboardComponents": [
+        	{
+						"id": 8,
+						"name": "UniversalDashboard.CodeEditor",
+						"path": "C:\\ProgramData\\PowerShellUniversal\\Dashboard\\Components\\UniversalDashboard.CodeEditor\\1.0.4",
+						"version": "1.0.4"
+					}
+      ]
     },
     {
       "id": 39,
