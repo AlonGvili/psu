@@ -1,0 +1,7 @@
+{
+	"Accessible": [
+		{ "id": 1, "username": "Admin", "roles": ["Administrator", "Operator", "Reader"] },
+		{ "id": 2, "username": "Alon Gvili", "roles": ["Operator"] },
+		{ "id": 3, "username": "Idan", "roles": ["Qa", "Reader"] }
+	]
+}
