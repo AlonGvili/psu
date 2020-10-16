@@ -1,0 +1,20 @@
+{
+	"Diag": [
+		{
+            "id": 92,
+			"memory": 90050560,
+			"memoryHistory": [90050560, 96145408, 96165888, 96153600],
+			"cpu": 0,
+			"sessions": [],
+			"endpoints": [{ "id": "a1318ce6-26ef-40a5-81be-d28c46f3c29d", "averageExecutionTime": 0 }]
+		},
+		{
+            "id": 38,
+			"memory": 10050560,
+			"memoryHistory": [10050560, 10145408, 10165888, 10153600],
+			"cpu": 36,
+			"sessions": [],
+			"endpoints": [{ "id": "a1318ce6-26ef-40a5-81be-d28c46f3c45f", "averageExecutionTime": 640 }]
+		}
+	]
+}
