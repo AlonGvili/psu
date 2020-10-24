@@ -7,7 +7,7 @@
 			"sessions": [
 				{
 					"id": "1",
-					"lastTouched": "1603571817",
+					"lastTouched": "2020-10-25 00:42",
 					"userName": "Admin",
 					"endpoints": [
 						{
@@ -18,7 +18,7 @@
 				},
 				{
 					"id": "2",
-					"lastTouched": "1603571859",
+					"lastTouched": "2020-10-24 23:15",
 					"userName": "Admin",
 					"endpoints": [
 						{
