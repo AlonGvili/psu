@@ -1,0 +1,43 @@
+{
+	"Diagnostics": [
+		{
+			"id": 92,
+			"memory": 915461,
+			"memoryHistory": [915461, 916556, 922514, 944456],
+			"sessions": [
+				{
+					"id": "1",
+					"lastTouched": "1603571817",
+					"userName": "Admin",
+					"endpoints": [
+						{
+							"id": "0ebc8080-9aef-4340-8528-f468c8c7b534",
+							"averageExecutionTime": 3.9
+						}
+					]
+				},
+				{
+					"id": "2",
+					"lastTouched": "1603571859",
+					"userName": "Admin",
+					"endpoints": [
+						{
+							"id": "ebe75e7f-6975-481f-8d78-32d47044c1ce",
+							"averageExecutionTime": 2.1
+						}
+					]
+				}
+			],
+			"endpoints": [
+                {
+                    "id": "0ebc8080-9aef-4340-8528-f468c8c7b534",
+                    "averageExecutionTime": 3.9
+                },
+                {
+                    "id": "ebe75e7f-6975-481f-8d78-32d47044c1ce",
+                    "averageExecutionTime": 2.1
+                }
+            ]
+		}
+	]
+}
