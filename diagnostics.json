@@ -51,6 +51,14 @@
 						{
 							"id": "0ebc8080-9aef-4340-8528-f468c8c7b534",
 							"averageExecutionTime": 3.9
+						},
+						{
+							"id": "onClick_open",
+							"averageExecutionTime": 6.4
+						},
+						{
+							"id": "OpenDrawer",
+							"averageExecutionTime": 0.8
 						}
 					]
 				},
